@@ -2,31 +2,41 @@
 
 //Create a variable called myName that is a string data type
 
+
 //Code here
+let myName = "Dan";
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
+
 //Code here
+let myAge = 28;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
+
 //Code here
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
+
 //Code here
+let greatestFear;
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
+
 //Code here
+let devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -37,12 +47,19 @@
 
 //Code here
 
+function greeting(name){
+  return "Hello, " + name;
+}
+
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
+const newGreeting = function(name) {
+  return "Hello, " + name;
+};
 
 //////////////////PROBLEM 8////////////////////
 
@@ -50,6 +67,8 @@
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
+
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -60,11 +79,20 @@
 
 //Code Here
 
+let dog = {
+  name:"Fiat", 
+  color:"purple", 
+  age:993802, 
+  goodBoy:true
+};
+
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
+let devMountainClassPet = dog["name"];
 
+console.log(devMountainClassPet);
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -75,6 +103,20 @@
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
+
+function nameCheck(name) {
+  if (name === "Steven"){
+    return "What is up Steven?"
+  }
+  else if (name === "Bryan") {
+    return "Hey Bryan!"
+  }
+  else {
+    return "Cool name, " + name;
+  }
+}
+
+console.log(nameCheck("bea"));
 
 //////////////////PROBLEM 11////////////////////
 
