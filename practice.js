@@ -106,10 +106,10 @@ console.log(devMountainClassPet);
 
 function nameCheck(name) {
   if (name === "Steven"){
-    return "What is up Steven?"
+    return "What is up Steven?";
   }
   else if (name === "Bryan") {
-    return "Hey Bryan!"
+    return "Hey Bryan!";
   }
   else {
     return "Cool name, " + name;
@@ -125,11 +125,17 @@ console.log(nameCheck("bea"));
 // The add function should return the two parameters added together
 
 //Code Here
-
+function add(num1, num2) {
+  return num1 + num2;
+}
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
+
 //Code Here
+mathSum = add(3,4);
+
+console.log(mathSum);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -141,6 +147,23 @@ console.log(nameCheck("bea"));
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
+
+const faveColorFinder = function(color){
+  if(color === "red") {
+    return "red, isa great color";
+  }
+  else if(color === "green") {
+    return "green is a solid favorite color";
+  }
+  else if(color === "black") {
+    return "so trendy"
+  }
+  else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
+
+console.log(faveColorFinder("blue"));
 
 //////////////////PROBLEM 13////////////////////
 
@@ -167,25 +190,27 @@ function pond() {
 let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
-
 // Code Here
+let age = 28;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-
+age++;
+console.log(age);
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
+let age = 999;
