@@ -150,7 +150,7 @@ console.log(mathSum);
 
 const faveColorFinder = function(color){
   if(color === "red") {
-    return "red, isa great color";
+    return "red is a great color";
   }
   else if(color === "green") {
     return "green is a solid favorite color";
@@ -187,16 +187,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+let bathroomScope = ["rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["sailorDuck", "rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["realDuck", "duck"];
 
 //////////////////PROBLEM 14////////////////////
 
